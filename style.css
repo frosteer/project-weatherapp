@@ -38,6 +38,7 @@ body {
     flex-direction: column;
     flex: 1;
     justify-content: flex-start;
+    
 }
 
 .bottom-row {
@@ -98,8 +99,12 @@ button {
 /* Weather display */
 .weather-display {
     display: flex;
-    gap: 5px;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    left: -20px;
+    bottom: 20px;
 }
 
 .fa.fa-cloud {
@@ -107,11 +112,14 @@ button {
 }
 
 .weather-text {
-    font-size: 25px;
+    font-size: 15px;
+    position: relative;
+    bottom: 30px;
+    left: -10px;
 }
 
 .temperature {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* bottom row: Weekly forecase */
