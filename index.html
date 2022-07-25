@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main js" defer></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,29 +18,31 @@
         <div class="top-row">
             <form>
                 <label for="city"> 
-                    <input type="search" id="city" name="city" placeholder="Search Location">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input id="formInput" autocomplete="off" type="search" id="city" name="city" placeholder="Search Location" value="tokyo">
+                    <button id="formButton" type="submit"><i class="fa fa-search"></i></button>
                     <div class="error"></div>
                 </label>
             </form>
         </div>
         <div class="middle-row">
             <div class="dateTime-display">
-                <div class="date">Sunday, 24th Jul '22</div>
-                <p>,</p>
-                <div class="time">8pm</div>
+                <div class="date"></div>
             </div>
             <div class="city-display">
-                <div class="city-name">Adelaide</div>
+                <div class="city-name"></div>
+            </div>
+
+            <div class="temperature-display">
+                <div class="temperature"></div>
             </div>
             
             <div class="weather-display">
-                <div class="weather-img"><i class="fa fa-cloud" aria-hidden="true"></i></div>
-                <div class="weather-text">Cloudy</div>
+                <div class="weather-img">
+                    <img class="weatherIMG" src=""></i>
+                </div>
+                <div class="weather-text"></div>
             </div>
-            <div class="temperature-display">
-                <div class="temperature">16 C</div>
-            </div>
+            
             
         </div>
         <div class="bottom-row">
