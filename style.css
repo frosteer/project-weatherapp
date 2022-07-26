@@ -134,3 +134,9 @@ button {
     margin-bottom: 10px;
     height: 12px;
 }
+
+.sub-info {
+    font-size: 0.7rem;
+    position: relative;
+    top: -30px;
+}
